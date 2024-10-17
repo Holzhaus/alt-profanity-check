@@ -1,0 +1,11 @@
+---
+# This file tells https://pre-commit.com/
+# which hooks are provided by this repo
+# for use by other git repos.
+
+- id: profanity-check
+  name: Check files for profanity
+  description: Analyses files to ensure that they don't contain profanity.
+  entry: profanity_check
+  args: [--files]
+  language: python
